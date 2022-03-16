@@ -1,0 +1,17 @@
+.boton{
+	width: 100px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius:20px;
+	background-color: transparent;
+	color: black;
+	font-size:20px;
+	text-align: center;
+	padding: 5px;
+	margin:10px;
+}
+
+.boton-ir{
+	@extend .boton;
+	background-color:lightblue;
+}

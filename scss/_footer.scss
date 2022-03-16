@@ -1,0 +1,19 @@
+$pad:50px;
+$paletaCromatica:(
+	bgPrimario:lightblue,
+	bgSecundario:lightgreen,
+	fontPrimario:black,
+	fontSecundario:lightblue
+	);
+@mixin flex-horizontal-around{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.footer-flex{
+	@include flex-horizontal-around;
+}
+footer{
+	padding:$pad;
+	background-color: map-get($paletaCromatica,bgPrimario);
+}

@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;400;700;900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8191,3 +8192,32 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
+* {
+  font-family: 'Smooch Sans', sans-serif; }
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+footer {
+  padding: 50px;
+  background-color: lightblue; }
+
+.boton, .boton-ir {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px; }
+
+.boton-ir {
+  background-color: lightblue; }
+
+main {
+  margin: 50px; }
