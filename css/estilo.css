@@ -8221,3 +8221,7 @@ footer {
 
 main {
   margin: 50px; }
+  main div {
+    background-color: lightblue; }
+    main div h1 {
+      text-align: center; }

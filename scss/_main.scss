@@ -1,5 +1,13 @@
 $marg:50px;
-
+@mixin alineacion($align-text){
+	text-align: $align-text;
+}
 main{
 	margin:$marg;
+	div{
+		background-color:map-get($paletaCromatica,bgPrimario);
+		h1{
+			@include alineacion(center);
+		}
+	}
 }
