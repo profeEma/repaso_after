@@ -8195,6 +8195,12 @@ a.text-dark:hover, a.text-dark:focus {
 * {
   font-family: 'Smooch Sans', sans-serif; }
 
+@media only screen and (max-width: 768px) {
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
+
 .footer-flex {
   display: flex;
   flex-direction: row;
@@ -8225,3 +8231,45 @@ main {
     background-color: lightblue; }
     main div h1 {
       text-align: center; }
+
+.imgFluida {
+  width: 100%;
+  height: auto; }
+
+.grid {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+@media only screen and (min-width: 1024px) {
+  .grid-section-service {
+    display: grid;
+    grid-template-areas: "titulo titulo" "img imgTexto";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; } }
+
+@media only screen and (max-width: 768px) {
+  .grid-section-service {
+    display: grid;
+    grid-template-areas: "titulo" "img" "imgTexto";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; } }
+
+ul {
+  display: flex; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      text-decoration: none; }
+      ul li a:hover {
+        color: red; }

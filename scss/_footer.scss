@@ -10,6 +10,16 @@ $paletaCromatica:(
 	flex-direction: row;
 	justify-content: space-around;
 }
+@mixin flex-horizontal-around-mobile{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+@media only screen and (max-width: 768px){
+	.footer-flex{
+		@include flex-horizontal-around-mobile;
+	}
+}
 .footer-flex{
 	@include flex-horizontal-around;
 }
